@@ -1,0 +1,117 @@
+.services{
+    margin-top: 10rem;
+}
+.services .services__top a{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Poppins_semiBold;
+    margin: 1rem;
+}
+.services .services__top a:last-child{
+    color: var(--primary-color);
+}
+.services .services__top img{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.services__contain h2{
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-family:  Bebas_bold ;
+    margin: 4rem 0;
+}
+
+.services .box{
+    display: flex;
+    margin: 6rem 0;
+}
+.services   .box .box__img{
+    width: 47rem;
+    height: 30rem;
+    margin-right: 1.6rem;
+}
+.services   .box .box__img{
+    width: 100%;
+    object-fit: cover;
+}
+.services .box .box__text{
+    margin-top: 3rem;
+}
+.services .box .box__text a{
+    font-size: 4.5rem;
+    font-family: Bebas_bold;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    margin-top:2rem;
+}
+.services .box .box__text p{
+    font-size: 1.6rem;
+    font-family: Poppins_regular;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+}
+.services .box .box__text .box__button{
+    font-size: 3.2rem;
+    font-family: Poppins_medium;
+    color: #fff;
+}
+.services .box .box__text .box__button i{
+    transform: rotate(45deg);
+    font-size: 22px;
+    margin-left: 3.6rem;
+}
+
+
+/*TODO -----------------------------------------------------------------------Media Query 992 1200---------------------- */
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .container{
+        max-width: 880px;
+    }
+}
+/*TODO ---------------------------------------------------------------------------Media Query 768-992------------------ */
+@media (min-width: 768px) and (max-width: 992px) {
+    .container{
+        max-width: 830px;
+    }
+    .services .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .box{
+        flex-direction: column;
+    }
+}
+/*TODO -------------------------------------------------------------------------------Media Query 600-768---------- */
+@media (min-width: 600px) and (max-width: 768px) {
+    .container{
+        max-width: 660px;
+    }
+    .services .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .box{
+        flex-direction: column;
+    }
+}
+/*TODO -----------------------------------------------------------------Media Query < 600--------------------------------- */
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 600px;
+        
+    }
+    .services .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .box{
+        flex-direction: column;
+    }
+    .services .box__text{
+        margin: 0 10px;
+    }
+    
+}

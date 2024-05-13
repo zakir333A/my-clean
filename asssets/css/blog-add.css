@@ -1,0 +1,132 @@
+.blogAdd{
+    margin-top: 10rem;
+    
+}
+.blogAdd .blogAdd__title a{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Poppins_semiBold;
+    margin: 1rem;
+}
+.blogAdd .blogAdd__title a:last-child{
+    color: var(--primary-color);
+}
+.blogAdd .blogAdd__img img{
+    max-width: 100%;
+}
+.blogAdd .blogAdd__img{
+    margin-top: 3rem;
+}
+
+.blogAdd h2{
+    font-size: 4rem;
+    padding: 3rem 0;
+    font-family: Bebas_bold;
+}
+.blogAdd .blogAdd__contain{
+  
+    gap: 13rem;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+ .blogAdd .blogAdd__contain .blogAdd__left {
+    width: 67rem;
+    height: 34rem;
+    
+} 
+ .blogAdd .blogAdd__contain .blogAdd__left img{
+    margin-bottom: 5rem;
+    
+} 
+
+.blogAdd .blogAdd__contain .blogAdd__left p{
+    font-size: 1.6rem;
+    font-family:Poppins_regular;
+}
+.blogAdd .blogAdd__contain .blogAdd__right{
+    margin: -4rem;
+} 
+.blogAdd .blogAdd__contain .blogAdd__right img{
+    width: 37rem;
+    height: 18rem;
+}
+.blogAdd .blogAdd__contain .blogAdd__right h1{
+    font-size: 4.5rem;
+    font-family: Bebas_bold;
+    color: var(--primary-color);
+}
+.blogAdd__right h2{
+    font-size: 2.3rem;
+}
+
+.blogAdd .blogAdd__contain .blogAdd_right_box p{
+    font-size: 1.6rem;
+    font-family:Poppins_regular;
+}
+.blogAdd  a{
+    font-size: 3.2rem;
+    font-family:Poppins_medium;  
+    color: #fff;
+    margin-top:3rem;
+    display: inline-block;
+    
+}
+.blogAdd  a i{
+    transform:rotate(45deg) ;
+    display: inline-block;
+    margin: 2rem;
+}
+
+/*TODO ----------------------------------------------------------------------Media Query------------------------------ */
+@media only screen and (max-width: 1200px) { 
+    .container{
+        max-width: 900px;
+    }
+    .blogAdd .blogAdd__contain .blogAdd__left p {
+        font-size: 13px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 992px) { 
+    .container{
+        max-width: 800px;
+        
+    }
+    .blogAdd .blogAdd__contain{
+        flex-direction: column;
+    }
+    .blogAdd .blogAdd__contain .blogAdd__left {
+        width: 67rem;
+        height: auto;
+        
+    } 
+    .blogAdd .blogAdd__contain .blogAdd__right{
+        margin: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 600px;
+        
+    }
+    .blogAdd .blogAdd__contain .blogAdd__right img{
+        width: 100%;
+        height:auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 400px;
+        
+    }
+    .blogAdd .blogAdd__contain .blogAdd__left {
+        width: 100%;
+        
+    } 
+}

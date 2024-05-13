@@ -1,0 +1,95 @@
+.products{
+    margin-top: 10rem;
+}
+.products .products__title a{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Poppins_semiBold;
+    margin: 1rem;
+}
+.products .products__title a:last-child{
+    color: var(--primary-color);
+}
+.products__img{
+    margin-top: 4rem;
+}
+.products h2{
+    font-size: 6rem;
+    font-family:Bebas_bold;
+    margin-top: 9rem;
+}
+
+.products_boxes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-flow: row;
+    gap: 2rem;
+    row-gap: 6rem;
+    margin-top: 5rem;
+    padding-bottom: 7rem;
+}
+.products .box {
+    padding: 11rem 0;
+}
+
+.products_boxes h4{
+    font-size: 3.2rem;
+    font-family: Bebas_bold;
+    margin-top: 3rem;
+}
+.products_boxes h5{
+    font-family:Poppins_semiBold;
+    font-size: 2.4rem;
+}
+.products_boxes p{
+    font-size: 1.6rem;
+    font-family:Poppins_regular;
+    margin-top: 1rem;
+}
+
+
+/*TODO -----------------------------------------------------------------------Media Query 992 1200---------------------- */
+
+@media only screen and (max-width: 1200px) { 
+    .container{
+        max-width: 992px;
+    }
+    .products_boxes{
+      
+        grid-template-columns: repeat(3,1fr);
+     
+    }
+ }
+
+ /*TODO ---------------------------------------------------------------------------Media Query 768-992------------------ */
+ @media only screen and (max-width: 992px) { 
+    .container{
+        max-width: 768pxpx;
+    }
+    .products_boxes{
+        grid-template-columns: repeat(2,1fr);
+     
+    }
+}
+
+/*TODO -------------------------------------------------------------------------------Media Query 600-768---------- */
+@media only screen and (max-width: 768px) { 
+    .container{
+        max-width: 600px;
+    }
+    .products_boxes{
+        grid-template-columns: 1fr;
+     
+    }
+}
+
+/*TODO -----------------------------------------------------------------Media Query < 600--------------------------------- */
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 500px;
+    }
+    .products_boxes{
+        grid-template-columns: 1fr;
+     
+    }
+}

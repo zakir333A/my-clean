@@ -1,0 +1,39 @@
+/*TODO BEBAS Font  */
+
+@font-face {
+    font-family: Bebas_thin;
+    src: url(../fonts/BebasNeue\ Thin.otf) format(opentype);
+ 
+}
+
+@font-face {
+    font-family:Bebas_light ;
+    src: url(../fonts/BebasNeue\ Light.otf) format(opentype);
+}
+
+@font-face {
+    font-family: Bebas_book;
+    src: url(../fonts/BebasNeue\ Book.otf) format(opentype);
+}
+
+@font-face {
+    font-family: Bebas_bold;
+    src: url(../fonts/BebasNeue\ Bold.otf) format(opentype);
+}
+
+/*TODO Poppins Font  */
+@font-face {
+    /* 500 */
+    font-family:Poppins_medium;  
+    src: url(../fonts/Poppins-Medium.otf) format(opentype);
+}
+@font-face {
+    /* 400 */
+    font-family:Poppins_regular;
+    src: url(../fonts/Poppins-Regular.otf) format(opentype);
+}
+@font-face {
+    /* 600  */
+    font-family:Poppins_semiBold;
+    src: url(../fonts/Poppins-SemiBold.otf) format(opentype);
+}

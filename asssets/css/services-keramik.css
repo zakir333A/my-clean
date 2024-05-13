@@ -1,0 +1,124 @@
+.ceramics{
+    margin-top: 10rem;
+}
+.ceramics .ceramics__title a{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Poppins_semiBold;
+    margin: 1rem;
+}
+.ceramics .ceramics__title a:last-child{
+    color: var(--primary-color);
+}
+.ceramics .ceramics__contain{
+    display: flex;
+    flex: 1 ;
+    margin-top: 8rem;
+}
+.ceramics .ceramics__contain .ceramics__img img{
+    width: 55rem;
+    height: 40rem;
+    margin-right: 4rem;
+    
+}
+.ceramics .ceramics__contain .ceramics__img a{
+    font-size: 3.2rem;
+    color: #fff;
+    font-family: Poppins_medium;
+    margin-right: 2rem;
+    display: inline-block;
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+.ceramics .ceramics__contain .ceramics__img a i{
+    transform: rotate(45deg);
+    margin-left: 2rem;
+}
+.ceramics .ceramics__contain .ceramics__text h3{
+    color: var(--primary-color);
+    font-size: 4.5rem;
+    font-family: Bebas_bold;
+    margin-bottom: 1rem;
+}
+.ceramics .ceramics__contain .ceramics__text p{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Poppins_regular;
+    padding: 20px 0;
+}
+
+
+
+
+
+/*TODO -----------------------------------------------------------------------Media Query 992 1200---------------------- */
+
+@media only screen and (max-width: 1200px) { 
+    .container{
+        max-width: 880px;
+    }
+    .ceramics .ceramics__contain .ceramics__text p{
+        font-size: 1.4rem;
+    }
+}
+/*TODO ---------------------------------------------------------------------------Media Query 768-992------------------ */
+@media only screen and (max-width: 992px) { 
+  
+    .ceramics .ceramics__contain{
+        flex-direction: column;
+    }
+    .ceramics .ceramics__img img{
+        width:100% !important;
+    }
+    .ceramics .ceramics__contain .ceramics__text{
+        padding: 0 10px;
+        margin: 0;
+    }
+    .ceramics .ceramics__contain .ceramics__img a{
+        font-size: 2.2rem;
+        margin: 1.5rem;
+    }
+   
+}
+/*TODO -------------------------------------------------------------------------------Media Query 600-768---------- */
+@media only screen and (max-width: 768px) { 
+    .ceramics .ceramics__contain{
+        flex-direction: column;
+    }
+    .ceramics .ceramics__img img{
+        width:100% !important;
+        
+    }
+    .ceramics .ceramics__contain .ceramics__img img {
+       margin: 0;
+    }
+    .ceramics .ceramics__contain .ceramics__text{
+        padding:  10px;
+        margin: 0;
+    }
+}
+/*TODO -----------------------------------------------------------------Media Query < 600--------------------------------- */
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 600px;
+        
+    }
+    .ceramics .ceramics__contain{
+        flex-direction: column;
+    }
+    .ceramics .ceramics__img img{
+        width:100% !important;
+    }
+    .ceramics .ceramics__contain .ceramics__text{
+        padding: 0 10px;
+        margin: 0;
+    }
+    .ceramics .ceramics__contain .ceramics__text p{
+        width: 80%;
+    }
+    .ceramics .ceramics__contain .ceramics__img a{
+        font-size: 1.8rem;
+        margin: 1.5rem;
+    }
+    
+}

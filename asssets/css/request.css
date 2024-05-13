@@ -1,0 +1,235 @@
+.request{
+    width: 100%;
+    
+}
+.request .request__title{
+    margin:9.2rem 0 ;
+}
+.request .request__title a{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Poppins_semiBold;
+    margin: 1.6rem;
+    
+}
+.request .request__title a:last-child{
+    color: var(--primary-color);
+}
+.request__total{
+    display: flex;
+}
+.request input{
+    background-color: #0E0E0E;
+    border: none;
+    outline: none;
+    border-bottom: .1rem solid #fff;
+    color: #404040;
+    font-size: 1.8rem;
+    margin-right: 4rem;
+    padding: 3rem 0;
+    font-family: Poppins_regular;
+    width: 46%;
+}
+.request .info form{
+    display: flex;
+}
+
+.request .contact form,
+.request .car__info form{
+    display: flex;
+}
+.request .car__info {
+    width:60%;
+    display: flex;
+    margin-top: 30px;
+}
+.request .car__info  select{
+    padding: 1rem 12.5rem;
+    margin-right: 4rem;
+    background: none;
+    color: #404040;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #0E0E0E;
+}
+
+.request .car__brand form{
+    display: flex;
+}
+.request textarea{
+    width: 95%;
+    height: 150px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #404040;
+    padding-top: 5rem;
+    font-size: 2rem;
+    resize: vertical;
+}
+
+.request .pls a{
+    color: #fff;
+    font-size: 3.2rem;
+    font-family: Poppins_medium;
+    
+   
+}
+.request .pls a i{
+    transform: rotate(45deg);
+    margin-left: .5rem;
+    padding: 2rem;
+}
+.request .request_left{
+    width: 60%;
+}
+.request .request_right{
+    width: 40%;
+}
+.request .request_right img{
+    width: 100%;
+    height: 650px;
+}
+
+.confirm i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+
+
+/*TODO -----------------------------------------------------------------------Media Query 992 1200---------------------- */
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .container{
+        max-width: 980px;
+    }
+    .request .car__info  select{
+        padding: 1rem 10rem;}
+    
+}
+/*TODO ---------------------------------------------------------------------------Media Query 768-992------------------ */
+@media (min-width: 768px) and (max-width: 992px) {
+    .container{
+        max-width: 800px;
+    }
+    .request .contact form,
+    .request .car__info form{
+    flex-direction: column;
+    width: 100%;
+}
+.request .car__brand form,
+.request__total,
+.request .info form,
+.request .car__info,
+.request{
+    flex-direction: column;
+}
+
+
+.request .request_left{
+    width: 100%;
+    
+}
+.request input{
+    width: 100%;
+}
+
+.request .request_right{
+    width: 100%;
+}
+
+.request .request_right img{
+    height: 400px;
+    margin-top: 50px;
+}
+.request .car__info  select{
+    padding: 1rem 40rem;
+}
+}
+/*TODO -------------------------------------------------------------------------------Media Query 600-768---------- */
+@media (min-width: 600px) and (max-width: 768px) {
+    .container{
+        max-width: 580px;
+    }
+    .request .contact form,
+    .request .car__info form{
+    flex-direction: column;
+    width: 100%;
+}
+.request .car__brand form,
+.request__total,
+.request .info form,
+.request .car__info,
+.request{
+    flex-direction: column;
+}
+
+
+.request .request_left{
+    width: 100%;
+    
+}
+.request input{
+    width: 100%;
+}
+
+.request .request_right{
+    width: 100%;
+}
+
+.request .request_right img{
+    height: 400px;
+    margin-top: 50px;
+}
+.request .car__info  select{
+    padding: 1rem 29rem;
+}
+}
+
+
+/*TODO -----------------------------------------------------------------Media Query < 600--------------------------------- */
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 450px;
+    }
+    .request .request__title a{
+        font-size: 13px;
+    }
+    .request .contact form,
+    .request .car__info form{
+    flex-direction: column;
+    width: 100%;
+}
+.request .car__brand form,
+.request__total,
+.request .info form,
+.request .car__info,
+.request{
+    flex-direction: column;
+}
+
+
+.request .request_left{
+    width: 100%;
+    
+}
+.request input{
+    width: 100%;
+}
+
+.request .request_right{
+    width: 100%;
+}
+
+.request .request_right img{
+    height: 400px;
+    margin-top: 50px;
+}
+.request .car__info  select{
+    padding: 1rem 17rem;
+}
+}

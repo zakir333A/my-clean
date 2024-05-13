@@ -1,0 +1,342 @@
+/*! Header  Start*/
+header{
+    height: 80px;
+ }
+ 
+ header .navigation_bar{
+     visibility: hidden;
+     opacity: 0;  
+ }
+ header .logo::after{
+    content: attr("index.html");
+ }
+ /*! Js code  */
+ header .navigation_bar.active {
+     visibility: visible;
+     opacity: 1;
+ }
+ header nav{
+     background-color: var(--background-color);
+     width: 45%;
+     height: 100vh;
+     margin-top: 11.4rem;
+     margin-left: 23.3rem; 
+ }
+ header nav ul li {
+     margin-bottom: 7rem;
+ }
+ header nav ul li a{
+     color: #fff;
+     font-family: Bebas_bold;
+     font-size: 5rem;
+     line-height: 3.2rem; 
+ }
+
+ header nav ul li a:hover{
+     color: var(--primary-color);
+ }
+ header nav .active{
+     color: var(--primary-color);
+     display: flex;
+     justify-content: space-between;
+     margin-right: 9.4rem;
+ }
+ header .navigation_bar{
+     display: flex;
+ }
+ 
+ header .nav-background{
+     background: url(../photos/600d03f45986e0a3069431a071ed53c1.jpeg) no-repeat center;
+     background-size: cover;
+     width: 55%;
+     filter: sepia(20%) brightness(100%) contrast(80%) grayscale(100%);
+ } 
+ header nav .nav-left-arrow{
+     color: #fff;
+     width: 1.4rem;
+     height: 2.2rem;
+     font-size: 3rem;
+     margin-left: -13.5rem;
+ }
+ header .head-container.hidden{
+     display: none;
+ }
+ header .container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.4rem;
+}
+header .selectAndMenu{
+    display: flex;
+    gap: 50px;
+    
+}
+
+header select {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    width: 7rem;
+    height: 1.6rem;
+
+}
+header select option{
+    color: #fff;
+    background: #000;
+}
+header .menu-bar{
+    margin-left: 7.3rem;
+}
+.logo{
+    width: 16.5rem;
+    height: 10rem;
+    display: inline-block;
+}
+.menu-bar{
+    width: 2.8rem;
+    height: 1.6rem;
+}
+ 
+ 
+ /*! Header End  */
+
+/*TODO ----------------------------------------------------------------------Media Query------------------------ */
+/*! Header Responsive  */
+@media only screen and (max-width: 992px) {
+   header .menu-bar{
+    width: 25px;
+    height: 20px;
+    margin-right: 30px;
+   }
+
+    header .container{
+        max-width: 992px;
+        
+    }
+    header select{
+        display: none;  
+    }
+    header .nav-background {
+        display: none;
+       }
+    
+  }
+  @media only screen and (max-width: 768px) {
+    header .container{
+        max-width: 600px;
+      }
+      header nav ul li {
+        margin: 30px 0;
+       
+    }
+    header nav ul li a{
+        font-size: 5rem; 
+    }
+      
+  }
+  @media only screen and (max-width: 600px) {
+    header .container{
+        max-width: 500px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    header .container{
+        max-width: 320px;
+    }
+    header nav{
+        margin-left: 50px;
+    }
+    header nav ul li a{
+        font-size: 2rem; 
+    }
+    header nav ul li {
+        margin: 1rem;
+    }
+    header nav{
+        background-color: var(--background-color);
+        width: 45%;
+        height: 100vh;
+        margin-top: 0;
+        margin-left: 0; 
+    }
+    header nav ul li {
+        margin: 40px 20px;
+       
+    }
+   
+  
+  }
+
+ 
+
+     
+   
+
+
+
+  /*! SCROLL  START*/
+body::-webkit-scrollbar {
+    width: 1rem; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #363636; 
+    border-radius: 10px; 
+   
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}
+/*! SCROLL  End*/
+
+
+ /*! FOOTER Start  */
+
+ .foot__contain{
+    display: flex;
+    padding: 14rem 0;
+
+}
+
+.foot__contain ul{
+    flex: 1;
+    
+}
+.foot__contain ul a{
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: Poppins_regular;
+    margin: 1.5rem 0;
+    display: inline-block;
+}
+.foot__contain .icons i{
+   margin:0 1rem ;
+}
+footer .security{
+    width: 100%;
+    background: var(--primary-color);   
+    text-align: center;
+    padding: 1rem;
+}
+footer .security p{
+    color: #000;
+    font-size: 15px;
+    
+}
+
+main.hidden,
+footer.hidden{
+    display: none; /*! Javascript code  */ 
+}
+
+
+.up {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: up 2s ease-in-out infinite;
+    z-index: 99999;
+
+}
+.up i{
+    font-size: 20px;
+    color: #000;
+   
+}
+@keyframes up{
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+
+/*! Footer END  */
+@media (min-width: 600px) and (max-width: 768px) {
+      /*! Footer Start  */
+      .container{
+        max-width: 600px;
+      }
+     
+      .foot__contain .logo {
+        width: 120px;
+        
+    }
+    .foot__contain .logo_sec{
+        margin-right: 60px;
+    }
+    
+    .foot__contain ul{
+        padding: 20px;
+    }
+    .foot__contain ul li a{
+        font-size: 16px;
+    }
+    .foot__contain .icons{
+        display: flex;
+    }
+    .foot__contain .icons i{
+         font-size: 15px;
+         
+    }
+    /*! Footer End  */
+
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 550px;
+    }
+    header .navigation_bar ul li a{
+        font-size: 25px; }
+       /*! Footer Start  */
+       .foot__contain{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .foot__contain .logo {
+        width: 130px;
+    }
+    .foot__contain ul li a{
+        font-size: 20px;
+    }
+    .logo_sec{
+        margin-bottom: 44px;
+    }
+    .foot__contain .icons i{
+         font-size: 30px;
+         padding: 0 20px;
+    }
+    footer .security p{
+        font-size: 14px;
+    }
+    
+     
+    /*! Footer End  */
+}
+
+@media only screen and (max-width: 350px) {
+    header .navigation_bar ul li a{
+        font-size: 18px; }
+    .foot__contain .icons i{
+       font-size: 17px;
+   }
+    .foot__contain .list-3 {
+     margin-top: 47px;
+     margin-bottom: 18px;
+   }
+  
+}
